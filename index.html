@@ -34,6 +34,40 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <style type="text/css">
+    blink {
+      color: yellow;
+      font-weight: bold;
+      font-size: 20px;
+  -webkit-animation: 2s linear infinite condemned_blink_effect; /* for Safari 4.0 - 8.0 */
+  animation: 2s linear infinite condemned_blink_effect;
+}
+
+/* for Safari 4.0 - 8.0 */
+@-webkit-keyframes condemned_blink_effect {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes condemned_blink_effect {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+  </style>
 
   <!-- =======================================================
   * Template Name: Arsha - v2.3.1
@@ -86,6 +120,8 @@
                 <li>Special Coaching for : <span style="color:yellow"> NEET & JEE </span></li>
                 <li>Mathematics for Diploma & Engineering </li>
             </ul>
+             <blink> <i class="fa fa-thermometer-three-quarters" aria-hidden="true"></i>
+                    Practical Classes Also Conducted</blink>
           <div class="d-lg-flex">
             <a href="#about" class="btn-get-started scrollto">Fill Form</a>
             <a href="https://www.youtube.com/watch?v=tvwjt25IJAs" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Watch Video <i class="icofont-play-alt-2"></i></a>
@@ -138,8 +174,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>What should come here ?</h2>
-          <p>What should come here ?</p>
+          <h2>Online Application Form </h2>
+          <!-- <p>What should come here ?</p> -->
         </div>
 
         <div class="row">
@@ -227,17 +263,13 @@
                     <option value="PCMCS">PCMCS</option>
                     <option value="SSLC State">SSLC State</option>
                     <option value="CBSE">CBSE</option>
-                    <option value="Commerce [ EBA ]">Commerce [ EBA ]</option>
-                    <option value="Commerce [ CEBA ]">Commerce [ CEBA ]</option>
-                    <option value="Commerce [ MSBA ]">Commerce [ MSBA ]</option>
+                    <option value="Commerce [ ABEC ]">Commerce [ ABEC ]</option>
+                    <option value="Commerce [ ABES ]">Commerce [ ABES ]</option>
+                    <option value="Commerce [ ABEBm ]">Commerce [ ABEBm ]</option>
                   </select>
                 </div>
 
-                <div class="form-group col-md-4">
-                  <label >Amount Paid Last ( Rs )<span style="color:red"> *</span></label>
-                  <input type="text" name="amt" class="form-control" id="amt" 
-                   data-bvalidator="number,required" data-bvalidator-msg = "Please enter amount"/>
-                </div>
+                
 
 
                 <div class="form-group col-md-4">
