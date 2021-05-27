@@ -31,11 +31,18 @@ else
 
 class database{ 
 
-	public $host="localhost";
+	/*public $host="localhost";
 	public $userName="root";
 	public $password="";
-	public $databaseName="abcstudycentre";
+	public $databaseName="abcstudycentre";*/
+
+	public $host="localhost";
+	public $userName="u663901735_abcstudycentre";
+	public $password="c7f718@All";
+	public $databaseName="u663901735_abcstudycentre";
 	public $con;
+
+	 
 
 	public function __construct()
 	{
