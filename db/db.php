@@ -1,10 +1,18 @@
 <?php
 
  date_default_timezone_set("Asia/Calcutta");
- $server="localhost";
+ 
+ /*$server="localhost";
  $uname="root";
  $pwd="";
- $db="abcstudycentre";
+ $db="abcstudycentre";*/
+
+ $server="localhost";
+ $uname="u663901735_abcstudycentre";
+ $pwd="c7f718@All";
+ $db="u663901735_abcstudycentre";
+
+ 
 
 
 
