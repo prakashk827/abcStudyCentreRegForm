@@ -1,6 +1,9 @@
 <?php
 include_once ("../db/db.php");
 session_start();
+if(!isset($_SESSION['adminUName'])){
+	header("Location:index.php");
+}
 
 ?>
 
@@ -58,7 +61,7 @@ session_start();
 						</thead>
 						<tbody>
 <?php
-$clientUId = $_SESSION['clientUId'];
+
 $query = "SELECT * FROM `onlineappform` ORDER BY id DESC";
 $exe = mysqli_query($conn, $query);
 if (mysqli_num_rows($exe) > 0) {
@@ -139,37 +142,7 @@ if (mysqli_num_rows($exe) > 0) {
 
 $(document).ready(function(){
  
-  $('.cancel').click(function(){
-    $("#myModal").modal('show');
-      var id = $(this).attr("data-id");
-      
-        swal({
-          title: "Are you sure you want to delete this ? ",
-          text: "" ,
-          type: "warning",
-          showCancelButton: true,
-          confirmButtonText: "Yes",
-          cancelButtonText: "No",
-          closeOnConfirm: false,
-          closeOnCancel: false
-        }, function(isConfirm) {
-          if (isConfirm) {
-
-             $.post("delete/delete-payment-pending-coupon.php",
-          {
-            id:id
-          },
-          function(data)
-          {
-             swal("Deleted!", data , "success");
-               window.location.href="pending-payment.php";         
-          });
-             
-          } else {
-            swal("Cancelled", "", "error");
-          }
-        });
-      });
+  
 
 //Payment
   $('.moreDetails').click(function(){

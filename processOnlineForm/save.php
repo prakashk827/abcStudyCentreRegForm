@@ -19,7 +19,7 @@ if(isset($_POST['sName'])){
         VALUES('$date','$time','$sName','$mName','$fName','$fMobile','$mMobile','$wMobile','$branch','$combination','$message','active','$doj')";
         $exe = mysqli_query($conn, $query);
         if($exe){
-            echo "Inserted";
+             header("Location:../status.php");
         }else {
             echo "Error";
             echo mysqli_connect_error($conn);   

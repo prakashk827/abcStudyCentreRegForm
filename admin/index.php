@@ -18,8 +18,8 @@
 		<div class="cover"></div>
 	</section>
 	<section class="login-content">
-		<div class="logo">
-			<h1>Vali</h1>
+		<div style="color:white">
+			<h1>ABC Study Centre</h1>
 		</div>
 		<div class="login-box">
 

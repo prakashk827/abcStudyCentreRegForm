@@ -18,19 +18,19 @@
 include_once ("../../db/db.php");
 // export.php
 $output = '';
-
-$query = "SELECT * FROM `onlineappform` ORDER BY id DESC";
-$result = mysqli_query($conn, $query);
-if (mysqli_num_rows($result) > 0) {
-    $output .= '
-   <table class="table">
-                    <tr>  
+/*<tr>  
                       <td class="title" ><center><h2>Showing all student list</2></center></td>
                     </tr>
                     <tr>
                       <td class="title" >Downloaded date :'.date("d-m-Y").'</td>
                     </tr>
-                    <tr>  
+                    <tr> */
+$query = "SELECT * FROM `onlineappform` ORDER BY id DESC";
+$result = mysqli_query($conn, $query);
+if (mysqli_num_rows($result) > 0) {
+    $output .= '
+   <table class="table">
+                     
                          <th class="header" >Student Name</th>  
                          <th class="header">Branch</th>
                          <th class="header">Combination</th>
@@ -64,7 +64,7 @@ if (mysqli_num_rows($result) > 0) {
     }
     $output .= '</table>';
     header('Content-Type: application/xls');
-    header('Content-Disposition: attachment; filename=download.xls');
+    header('Content-Disposition: attachment; filename=student_details.xls');
     echo $output;
 }
 

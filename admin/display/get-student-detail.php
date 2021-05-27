@@ -1,9 +1,7 @@
 <?php
 include_once ("../../db/db.php");
 session_start();
-if ($_SESSION["clientUId"] == '') {
-    header("Location:../index.php");
-}
+
 ?>
 <!-- Modal -->
 <?php
