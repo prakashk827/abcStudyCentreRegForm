@@ -4,7 +4,7 @@
  $server="localhost";
  $uname="root";
  $pwd="";
- $db="samruddhi";
+ $db="abcstudycentre";
 
 
 
@@ -26,7 +26,7 @@ class database{
 	public $host="localhost";
 	public $userName="root";
 	public $password="";
-	public $databaseName="samruddhi";
+	public $databaseName="abcstudycentre";
 	public $con;
 
 	public function __construct()

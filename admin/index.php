@@ -81,7 +81,7 @@
 	                    	$("#warning").css("display",'block');
 	                    	if(data == 200){
 	                    		$("#warning").css("display",'none');
-		                    	window.location.href='announce-winner.php';
+		                    	window.location.href='student-list.php';
 	                    	}else if(data== 400 ){
 	                    		window.location.href='index.php';
 	                    	} 
