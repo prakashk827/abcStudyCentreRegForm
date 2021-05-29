@@ -86,7 +86,7 @@ if (mysqli_num_rows($exe) > 0) {
         
 <?php
 } else {
-    echo "Error while fetching coupon";
+    echo "No records.";
 }
 
 ?>

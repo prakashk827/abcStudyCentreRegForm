@@ -81,29 +81,18 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
-		
-      <h1 class="logo mr-auto"><a  href="index.html" >
-      <span><a class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a></span>
-      <span style="color:white;">ABC Study Centre</span></a><br> 
-        <span style="color:yellow;font-size:12px">SSLC | CBSE | PUC | NEET | JEE | KCET </span>
+      
+      <h1 class="logo mr-auto" style="color:white;font-style:12px !important">
+      <!--<span><img src="assets/img/logo.png" alt="" class="img-fluid"></span> -->
+     ABC Study Centre<br> 
+        <span style="color:yellow;font-size:12px">SSLC <span style="color:white;"> |</span>
+          CBSE <span style="color:white;"> |</span> 
+          PUC <span style="color:white;"> |</span>
+          NEET <span style="color:white;"> |</span>
+          JEE <span style="color:white;"> |</span>
+          KCET </span>
       </h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-     
-
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#about">About</a></li>
-          
-          
-          <li><a href="#contact">Fill Form</a></li>
-
-        </ul>
-      </nav><!-- .nav-menu -->
-
-      <a href="http://abcstudycentre.com/" class="get-started-btn scrollto">Visit Us</a>
-
-    </div>
+    </div><br><br>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
@@ -112,29 +101,33 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <br><br><br><h1>We Offer Coaching For </h1>
-          <p style="color:white;font-size:16px">&bull; 
+          
+          
+            <h1>We Offer Coaching For </h1>
+            
+          <p style="color:white;font-size:16px;"> <i class="fa fa-arrow-right" aria-hidden="true"></i>
           		9<sup>th</sup> & 10<sup>th</sup> 
                   <i class="fa fa-arrow-right" aria-hidden="true"></i> STATE , CBSE , ICSE
           </p>
-          <p style="color:white;font-size:16px">&bull;
-          	I PU & II PU Science & Commerce
+          <p style="color:white;font-size:16px">
+          	<i class="fa fa-arrow-right" aria-hidden="true"></i> I PU & II PU Science & Commerce
           </p>
-          <p style="color:white;font-size:16px">&bull; 
-          	Special Coaching for : <span style="color:yellow"> NEET & JEE </span>
+          <p style="color:white;font-size:16px"> <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          	Special Coaching for : <span style="color:yellow"> <strong> NEET & JEE </strong>  </span>
           </p>
-          <p style="color:white;font-size:16px">&bull;
+          <p style="color:white;font-size:16px"><i class="fa fa-arrow-right" aria-hidden="true"></i>
           	Mathematics for Diploma & Engineering 
           </p>
-           
-             <blink> <i class="fa fa-thermometer-three-quarters" aria-hidden="true"></i>
-                    Practical Classes Also Conducted</blink>
-          <div class="d-lg-flex">
-            <a href="#about" class="btn-get-started scrollto">Fill Form</a>
+           <blink> <i class="fa fa-thermometer-three-quarters" aria-hidden="true"></i>
+                    Practical Classes Also Conducted
+           </blink>
+          
+                    <div class="d-lg-flex">
+            <a href="#contact" class="btn-get-started scrollto">Fill Applicaton Form</a>
             <a href="https://www.youtube.com/watch?v=tvwjt25IJAs" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Watch Video <i class="icofont-play-alt-2"></i></a>
           </div>
         </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+        <div  class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
           <img src="assets/img/classroom.jpg" class="img-fluid animated" alt="">
         </div>
       </div>
@@ -212,7 +205,7 @@
 
           </div> -->
 
-          <div class="col-lg-12 mt-5 mt-lg-0 d-flex align-items-stretch">
+          <div  class="col-lg-12 mt-5 mt-lg-0 d-flex align-items-stretch">
             <form data-bvalidator-validate action="processOnlineForm/save.php" method="post" role="form" class="php-email-form">
               <div class="form-row">
                 <div class="form-group col-md-4">
@@ -283,7 +276,7 @@
                 <div class="form-group col-md-4">
                   <label >Date of Admission <span style="color:red"> *</span></label>
                   <input type="date" name="date" class="form-control" id="date" 
-                   data-bvalidator="date,required"/>
+                   data-bvalidator="date,required" data-bvalidator-msg = "Please select date"/>
                 </div>
 
                 
