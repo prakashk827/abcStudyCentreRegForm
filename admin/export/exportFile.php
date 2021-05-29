@@ -32,6 +32,7 @@ if (mysqli_num_rows($result) > 0) {
    <table class="table">
                      
                          <th class="header" >Student Name</th>  
+                         <th class="header" >School / College Name </th> 
                          <th class="header">Branch</th>
                          <th class="header">Combination</th>
                          <th class="header">Join Date</th>
@@ -47,6 +48,7 @@ if (mysqli_num_rows($result) > 0) {
     while ($row = mysqli_fetch_array($result)) {
         $output .= '<tr>  
                          <td class="body">' . $row["studentName"] . '</td> 
+                         <td class="body">' . $row["institute"] . '</td>
                          <td class="body">' . $row["branch"] . '</td>  
                          <td class="body">' . $row["combination"] . '</td> 
                          <td class="body">' . $row["doj"] . '</td> 

@@ -42,6 +42,12 @@ if (isset($_POST['sId'])) {
 						<th class="modalTblHeader" >Student Name :</th>
 						<td><?php echo $profile['studentName'] == '' ? 'Not Provided' : $profile['studentName']; ?></td>
 					</tr>
+
+					<tr>
+						<th class="modalTblHeader" >School / College  :</th>
+						<td><?php echo $profile['institute'] == '' ? 'Not Provided' : $profile['institute']; ?></td>
+					</tr>
+					
 					
 					<tr>
 						<th class="modalTblHeader" >Date of Joining :</th>
