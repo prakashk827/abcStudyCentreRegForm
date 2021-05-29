@@ -46,7 +46,7 @@
                   Thank you <br>
                   Your application submitted successfully..!
             </h2>
-            <a href="index.html"><button class="btn" style="color:white;background:#37517e;border:1px solid white">Back to Home Page</button></a>
+            <a href="http://abcstudycentre.com/"><button class="btn" style="color:white;background:#37517e;border:1px solid white">Back to Home Page</button></a>
           </center>
         </div>
         <div class="col-md-1"></div>
