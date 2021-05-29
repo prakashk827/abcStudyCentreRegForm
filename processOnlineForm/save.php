@@ -11,18 +11,19 @@ if(isset($_POST['sName'])){
         $branch = $_POST['branch'];
         $combination = $_POST['combination'];
         $doj = $_POST['date'];
+        $institute = $_POST['institute'];
         $message = $_POST['message'];
         $date = date('d-m-Y');
         $time = date("h:i:sa");
         
-        $query = "INSERT INTO `onlineappform`( `date`, `time`, `studentName`,`motherName`,`fatherName`, `fatherMobile`,`motherMobile`, `whatsApp`,`branch`, `combination`,`message`,`status`,`doj`)
-        VALUES('$date','$time','$sName','$mName','$fName','$fMobile','$mMobile','$wMobile','$branch','$combination','$message','active','$doj')";
+        $query = "INSERT INTO `onlineappform`( `date`, `time`, `studentName`,`motherName`,`fatherName`, `fatherMobile`,`motherMobile`, `whatsApp`,`branch`, `combination`,`message`,`status`,`doj`,`institute`)
+        VALUES('$date','$time','$sName','$mName','$fName','$fMobile','$mMobile','$wMobile','$branch','$combination','$message','active','$doj','$institute')";
         $exe = mysqli_query($conn, $query);
         if($exe){
              header("Location:../status.php");
         }else {
-            echo "Error";
-            echo mysqli_connect_error($conn);   
+            echo "Error. Please contact us..";
+            
         }
 } else {
         header("Location:../index.html");
