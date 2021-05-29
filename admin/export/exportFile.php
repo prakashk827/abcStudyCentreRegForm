@@ -34,7 +34,7 @@ if (mysqli_num_rows($result) > 0) {
                          <th class="header" >Student Name</th>  
                          <th class="header">Branch</th>
                          <th class="header">Combination</th>
-                         <th class="header">Date of Join</th>
+                         <th class="header">Application Date</th>
                          <th class="header" >Mother Name</th>  
                          <th class="header" >Father Name</th>  
                          <th class="header">Father Mobile Number</th>
