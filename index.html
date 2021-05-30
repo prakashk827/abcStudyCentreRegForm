@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
 
   <title>ABC Study Centre</title>
   <meta content="" name="description">
@@ -67,11 +67,16 @@
   }
 }
 .batches{
-  margin-top: 3%;
+  
   background-color: #37517E;
-  padding: 3%;
+  padding:1%;
   color: white;
   
+}
+
+.director {
+  color: #37517E;
+  font-weight: bold;
 }
   </style>
 
@@ -178,9 +183,16 @@
 
           </div>
 
-          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("assets/img/principal.jpeg");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
-
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img">
+            <img  class="align-items-stretch order-1 order-lg-2 img-fluid" src="assets/img/principal.jpeg" data-aos="zoom-in" data-aos-delay="150">
+            <center>
+              <p class="director">Dr. Devaraj B K <br> Director <br> ABC Study Centre</p>
+              
+            </center>
+          </div>
+            
         </div>
+        
       
 
       </div>
@@ -282,6 +294,7 @@
                     <option value="Commerce / ABEC ">Commerce / ABEC </option>
                     <option value="Commerce / ABES ">Commerce / ABES </option>
                     <option value="Commerce / ABEBm ">Commerce / ABEBm </option>
+                    <option value="Others">Others</option>
                   </select>
                 </div>
 
