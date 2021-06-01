@@ -8,8 +8,8 @@
  $db="abcstudycentre";*/
 
  $server="localhost";
- $uname="u663901735_abcstudycentre";
- $pwd="c7f718@All";
+ $uname="valcolqi_abc";
+ $pwd="gWGxc#@(GYXt";
  $db="u663901735_abcstudycentre";
 
  
@@ -37,8 +37,8 @@ class database{
 	public $databaseName="abcstudycentre";*/
 
 	public $host="localhost";
-	public $userName="u663901735_abcstudycentre";
-	public $password="c7f718@All";
+	public $userName="valcolqi_abc";
+	public $password="gWGxc#@(GYXt";
 	public $databaseName="u663901735_abcstudycentre";
 	public $con;
 
