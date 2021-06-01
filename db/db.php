@@ -10,7 +10,7 @@
  $server="localhost";
  $uname="valcolqi_abc";
  $pwd="gWGxc#@(GYXt";
- $db="u663901735_abcstudycentre";
+ $db="valcolqi_abcAdmission";
 
  
 
@@ -39,7 +39,7 @@ class database{
 	public $host="localhost";
 	public $userName="valcolqi_abc";
 	public $password="gWGxc#@(GYXt";
-	public $databaseName="u663901735_abcstudycentre";
+	public $databaseName="valcolqi_abcAdmission";
 	public $con;
 
 	 
