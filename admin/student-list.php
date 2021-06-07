@@ -42,6 +42,14 @@ if(!isset($_SESSION['adminUName'])){
 	<div class="col-md-12">
 		<a href="export/exportFile.php"><button class="btn btn-success btn-sm ">Export to Excel</button></a> <br><br>
 	</div>
+	<?php 
+	$role =  $_SESSION['role'];
+	
+	if($role != 'admin'){
+	    $action = 'display : none';
+	}
+	
+	?>
 	<div class="col-md-12">
 		<div class="tile">
 			<div class="tile-body">
@@ -51,11 +59,10 @@ if(!isset($_SESSION['adminUName'])){
 							<tr>
 								<th>Reg. Date</th>
 								<th>Student Name</th>
-								
 								<th>Combintion</th>
 								<th>Branch</th>
 								<th>View More</th>
-								
+								<th style="<?php echo $action?>">Action</th>
 								
 							</tr>
 						</thead>
@@ -77,6 +84,11 @@ if (mysqli_num_rows($exe) > 0) {
 									<button class="btn btn-success btn-sm moreDetails"
 										data-sId="<?php echo $data['id']; ?>">Show</button>
 								</th>
+								<th style="<?php  echo $action?>">
+									<button class="btn btn-danger btn-sm deleteBtn"
+										data-sId="<?php echo $data['id']; ?>">Delete</button>
+								</th>
+								
 								
 
 							</tr>
@@ -151,9 +163,7 @@ $(document).ready(function(){
 
       $.post("display/get-student-detail.php",
                     {
-                      
     	  				sId:sId
-                      
                     },
                     function(data)
                     {
@@ -164,9 +174,45 @@ $(document).ready(function(){
                       
       });
 
+  //Delete record starts
+
+  $('.deleteBtn').click(function(){
+	  var sId = $(this).attr("data-sId");
+      
+        swal({
+          title: "Are you sure you want to delete this ? ",
+          text: "" ,
+          type: "warning",
+          showCancelButton: true,
+          confirmButtonText: "Yes",
+          cancelButtonText: "No",
+          closeOnConfirm: false,
+          closeOnCancel: false
+        }, function(isConfirm) {
+          if (isConfirm) {
+
+             $.post("insert/delete-student-record.php",
+          {
+            	 sId:sId
+          },
+          function(data)
+          {
+             swal("Deleted!", data , "success");
+               window.location.href="student-list.php";         
+          });
+             
+          } else {
+            swal("Cancelled", "", "error");
+          }
+        });
+      });
+  
+  
+  // Delete record ends
 
 
-       // window.location.href="cart-page.php?id="+id;
+
+      
         
         
 });

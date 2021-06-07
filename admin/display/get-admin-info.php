@@ -13,6 +13,7 @@ if(isset($_POST['uName']) && isset($_POST['pwd'])){
     {
         $data=mysqli_fetch_assoc($exe);
         $_SESSION['adminUName'] = $data['name'];
+        $_SESSION['role'] = $data['role'];
        
         echo 200;
         
